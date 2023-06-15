@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.sidebar {
+  position: fixed;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 1px 0px 0 1px #d6d6d6;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  flex: 1;
+}
+.sidebar .searchbox {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.Content-pane {
+  display: flex;
+  margin-left: calc(30% + 60px);
+  flex-wrap: wrap;
+}
+.hero-pane {
+  background-color: #dae2df;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  width: calc(100% - calc(60px));
+}
+.cards {
+  display: block;
+  clear: both;
+  column-count: 3;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: calc(100% - 20px);
+}
+.card {
+  display: block;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+}
+.card .picture {
+  width: 100%;
+}
+.card div:first-child {
+  font-weight: bold;
+  text-transform: capitalize;
+}
